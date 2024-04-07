@@ -1,14 +1,10 @@
-<?php
-    include("database.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <link rel="stylesheet" type ="text/css" href="/EXAM/CSS/sign.css">
+    <link rel="stylesheet" type ="text/css" href="/CSS/sign.css">
     <script>
         function validateForm() {
             var password = document.getElementById("password").value;
@@ -24,7 +20,7 @@
 <body>
     <div class="form">
     <h1><center>Register</center></h1>
-    <form name="form" action="dbsign.php" method="post" onsubmit="return validateForm();">
+    <form name="form" action="/HTML/log.html" method="post" onsubmit="return validateForm();">
 
         <label for="firstname">Firstname:</label><br>
         <input type="text" id="firstname" name="firstname" required><br><br>
@@ -44,10 +40,10 @@
         <label for="repassword">Confirm Password:</label><br>
         <input type="password" id="repassword" name="repassword" required><br><br>
         
-        <input type="button" id="bnt" name="cancel" value="Cancel" onclick="window.location.href='/EXAM/front.php';">
-        <input type="submit" id="btn" name="submit" value="Register">
+        <input type="button" id="bnt" name="cancel" value="Cancel" onclick="window.location.href='/front.html';">
+        <input type="button" id="btn" name="submit" value="Register" onclick="window.location.href='/HTML/log.html';">
     </form>
-    <p>Already have an account?<a href="/EXAM/PHP/log.php"> Login </p></a>
+    <p>Already have an account?<a href="/HTML/log.html"> Login </p></a>
 </div>
     
 </body>
